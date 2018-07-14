@@ -13,5 +13,14 @@ class ShoppingCart {
         }
         return this.items.push(item)
     }
+    clear() {
+        return this.items =[]
+    }
+    clone() {
+        const copy = Object.create(this)
+        return copy
+    }
 }
+
+
 module.exports = ShoppingCart
